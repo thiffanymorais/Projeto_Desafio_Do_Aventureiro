@@ -170,6 +170,8 @@ export const aventura1 = {
   ]
 };
 
+// -----------------------------------------------------------------------------------------------------
+
 // História 2: Mundo de Fantasia - Final Fiction XIV
 export const aventura2 = {
   titulo: "Final Fiction XIV",
@@ -181,7 +183,7 @@ export const aventura2 = {
       opcoes: [
         { texto: "Opção 1", proximaFase: 1 },
         { texto: "Opção 2", proximaFase: 2 },
-        { texto: "Opção 3", proximaFase: 3 },
+        { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
     },
@@ -190,7 +192,7 @@ export const aventura2 = {
     {
       texto: "Resposta 1 da escolha 1.",
       opcoes: [
-        { texto: "Continuar...", proximaFase: 4 },
+        { texto: "Continuar...", proximaFase: 3 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
@@ -201,40 +203,40 @@ export const aventura2 = {
     {
       texto: "Resposta 2 da escolha 1.",
       opcoes: [
-        { texto: "Continuar...", proximaFase: 4 },
+        { texto: "Continuar...", proximaFase: 3 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
     },
-
+    
     // 3
     {
-      texto: "Resposta 3 da escolha 1.",
+      texto: "Fase 2 da aventura. Aguarde a definição da narrativa completa.",
       opcoes: [
-        { texto: "Continuar...", proximaFase: 4 },
-        { texto: "", proximaFase: 0 },
-        { texto: "", proximaFase: 0 },
+        { texto: "Opção 1", proximaFase: 4 },
+        { texto: "Opção 2", proximaFase: 5 },
+        { texto: "Opção 3", proximaFase: 6 },
         { texto: "", proximaFase: 0 }
       ]
     },
     
     // 4
     {
-      texto: "Fase y da aventura. Aguarde a definição da narrativa completa.",
+      texto: "Resposta 1 da escolha 2.",
       opcoes: [
-        { texto: "Opção 1", proximaFase: 5 },
-        { texto: "Opção 2", proximaFase: 6 },
-        { texto: "Opção 3", proximaFase: 7 },
+        { texto: "Continuar...", proximaFase: 7 },
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
     },
     
     // 5
     {
-      texto: "Resposta 1 da escolha 2.",
+      texto: "Resposta 2 da escolha 2.",
       opcoes: [
-        { texto: "Continuar...", proximaFase: 8 },
+        { texto: "Continuar...", proximaFase: 7 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
@@ -243,9 +245,9 @@ export const aventura2 = {
     
     // 6
     {
-      texto: "Resposta 2 da escolha 2.",
+      texto: "Resposta 3 da escolha 2.",
       opcoes: [
-        { texto: "Continuar...", proximaFase: 8 },
+        { texto: "Continuar...", proximaFase: 7 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
@@ -254,31 +256,31 @@ export const aventura2 = {
     
     // 7
     {
-      texto: "Resposta 3 da escolha 2.",
+      texto: "Fase 3 da aventura. Aguarde a definição da narrativa completa.",
       opcoes: [
-        { texto: "Continuar...", proximaFase: 8 },
-        { texto: "", proximaFase: 0 },
-        { texto: "", proximaFase: 0 },
+        { texto: "Opção 1", proximaFase: 8 },
+        { texto: "Opção 2", proximaFase: 9 },
+        { texto: "Opção 3", proximaFase: 10 },
         { texto: "", proximaFase: 0 }
       ]
     },
     
     // 8
     {
-      texto: "Fase 3 da aventura. Aguarde a definição da narrativa completa.",
+      texto: "Resposta 1 da escolha 3.",
       opcoes: [
-        { texto: "Opção 1", proximaFase: 9 },
-        { texto: "Opção 2", proximaFase: 10 },
-        { texto: "Opção 3", proximaFase: 11 },
+        { texto: "Continuar...", proximaFase: 11 },
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
     },
     
     // 9
     {
-      texto: "Resposta 1 da escolha 3.",
+      texto: "Resposta 2 da escolha 3.",
       opcoes: [
-        { texto: "Continuar...", proximaFase: 12 },
+        { texto: "Continuar...", proximaFase: 11 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
@@ -287,9 +289,9 @@ export const aventura2 = {
     
     // 10
     {
-      texto: "Resposta 2 da escolha 3.",
+      texto: "Resposta 3 da escolha 3.",
       opcoes: [
-        { texto: "Continuar...", proximaFase: 12 },
+        { texto: "Continuar...", proximaFase: 11 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
@@ -298,27 +300,16 @@ export const aventura2 = {
     
     // 11
     {
-      texto: "Resposta 3 da escolha 3.",
+      texto: "Fase 4 da aventura. Aguarde a definição da narrativa completa.",
       opcoes: [
-        { texto: "Continuar...", proximaFase: 12 },
-        { texto: "", proximaFase: 0 },
-        { texto: "", proximaFase: 0 },
-        { texto: "", proximaFase: 0 }
+        { texto: "Opção 1", proximaFase: 12 },
+        { texto: "Opção 2", proximaFase: 13 },
+        { texto: "Opção 3", proximaFase: 14 },
+        { texto: "Opção 4 Secreta", proximaFase: 15 }
       ]
     },
     
     // 12
-    {
-      texto: "Fase 4 da aventura. Aguarde a definição da narrativa completa.",
-      opcoes: [
-        { texto: "Opção 1", proximaFase: 13 },
-        { texto: "Opção 2", proximaFase: 14 },
-        { texto: "Opção 3", proximaFase: 15 },
-        { texto: "Opção 4", proximaFase: 16 }
-      ]
-    },
-    
-    // 13
     {
       texto: "Resposta 1 da escolha 4.",
       opcoes: [
@@ -329,7 +320,7 @@ export const aventura2 = {
       ]
     },
     
-    // 14
+    // 13
     {
       texto: "Resposta 2 da escolha 4.",
       opcoes: [
@@ -340,7 +331,7 @@ export const aventura2 = {
       ]
     },
     
-    // 15
+    // 14
     {
       texto: "Resposta 3 da escolha 4.",
       opcoes: [
@@ -351,7 +342,7 @@ export const aventura2 = {
       ]
     },
     
-    // 16
+    // 15
     {
       texto: "Resposta secreta 4 da escolha 4.",
       opcoes: [

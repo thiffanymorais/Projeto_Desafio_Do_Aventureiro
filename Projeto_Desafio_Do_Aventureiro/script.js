@@ -7,7 +7,7 @@ let secretEnd = false;
 let secretCon1 = false;
 let secretCon2 = false;
 let secretCon3 = false;
-var fases = new Array(1,2,3,5,6,7);
+var fasesAvent2 = new Array(1,2,4,5,6,8,9,10,12,13,14,15);
 
 // Elementos do DOM
 const startScreen = document.getElementById("start-screen");
@@ -53,21 +53,25 @@ function processarEscolha(proximaFase) {
     }
   }
 
-  if (secretCon1 == true && secretCon2 == true && secretCon3 == true) {
-    secretEnd = true;
-  }
-
   // Aventura 2
-  if (aventuraSelecionada == aventura2 && fases.indexOf(proximaFase) != -1) {
+  if (aventuraSelecionada == aventura2 && fasesAvent2.indexOf(proximaFase) != -1) {
     btn2.classList.add("hidden");
     btn3.classList.add("hidden");
-  } else {
+  } else if (aventuraSelecionada == aventura2) {
     btn2.classList.remove("hidden");
     btn3.classList.remove("hidden");
   }
 
-  if (aventuraSelecionada == aventura2 && proximaFase === 99 && secretEnd == true) { //fase final, escolha secreta
-    btn4.classList.remove("hidden");
+  if (aventuraSelecionada == aventura2 && proximaFase == 2) {
+    secretCon1 == true;
+  }
+
+  if (aventuraSelecionada == aventura2 && proximaFase == 6) {
+    secretCon2 == true;
+  }
+
+  if (aventuraSelecionada == aventura2 && proximaFase == 10) {
+    secretCon3 == true;
   }
   
   faseAtual = proximaFase;
@@ -102,6 +106,22 @@ function atualizarJogo() {
   btn2.onclick = () => {
     processarEscolha(fase.opcoes[1].proximaFase);
   };
+  
+  btn3.onclick = () => {
+    processarEscolha(fase.opcoes[2].proximaFase);
+  };
+  
+  btn4.onclick = () => {
+    processarEscolha(fase.opcoes[3].proximaFase);
+  };
+
+  if (aventuraSelecionada == aventura2 && secretCon1 == true && secretCon2 == true && secretCon3 == true) {
+    secretEnd = true;
+  }
+  //fase final, escolha secreta
+  if (aventuraSelecionada == aventura2 && proximaFase === 11 && secretEnd == true) {
+    btn4.classList.remove("hidden");
+  }
 }
 
 // Eventos dos botões da tela inicial
