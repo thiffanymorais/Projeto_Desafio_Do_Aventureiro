@@ -179,10 +179,10 @@ export const aventura2 = {
 
     // Inicio
     {
-      texto: "Esta é a .",
+      texto: "Esta é a aventura de Mimi, uma aventureira na classe de Mago Negro, que controla poderosas magias destrutivas. Um dia na guilda de aventureiros, ela ouve a história sobre um grande tesouro em uma perigosa masmorra. Interessada pela história, ela apanha seu cajado mágico e corre em direção à sua jornada! Primeiro, ela deve passar pela floresta Mor'Thesserta para alcançar a masmorra. Andando pela floresta, um grande golem de pedra aparece e avista ela. Ele fixa seu olhar nela e começa a avançar, preparado para atacar. Mimi deve agir rápido para se defender, mas qual magia usar?!",
       opcoes: [
-        { texto: "Opção 1", proximaFase: 1 },
-        { texto: "Opção 2", proximaFase: 2 },
+        { texto: "A) Pare-o com gelo!", proximaFase: 1 },
+        { texto: "B) Derrote-o com fogo!", proximaFase: 2 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
@@ -190,7 +190,7 @@ export const aventura2 = {
 
     // 1
     {
-      texto: "Resposta 1 da escolha 1.",
+      texto: 'Mimi conjura gelo nos pés do golem, congelando suas pernas e parando seu avanço. "Fica frio aí!" Ela diz, antes de disparar espinhos de gelo nele, destruindo o golem. Ela comemora sua vitória e continua em frente...',
       opcoes: [
         { texto: "Continuar...", proximaFase: 3 },
         { texto: "", proximaFase: 0 },
@@ -201,9 +201,9 @@ export const aventura2 = {
 
     // 2
     {
-      texto: "Resposta 2 da escolha 1.",
+      texto: 'Mimi conjura uma bola de fogo e a arremessa na direção do golem. Ele é rapidamente derrotado com a explosão, caindo em pedaços no chão. "Hahaha! Você não tinha chance!" Mimi diz orgulhosamente, antes de perceber que a floresta está em chamas... Ela não pode continuar e foge do incêndio, voltando para casa derrotada...',
       opcoes: [
-        { texto: "Continuar...", proximaFase: 3 },
+        { texto: "Fim de Jogo...", proximaFase: -1 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
@@ -212,20 +212,20 @@ export const aventura2 = {
     
     // 3
     {
-      texto: "Fase 2 da aventura. Aguarde a definição da narrativa completa.",
+      texto: "Após mais alguns minutos de caminhada, Mimi vê um misterioso templo na floresta, coberto de vinhas e musgo. Ela se aproxima da porta e tenta empurrá-la, mas sem sucesso. Ela olha em sua volta e percebe que há um pequeno buraco na parede, e provavelmente consegue passar por ele. O que ela deveria fazer?",
       opcoes: [
-        { texto: "Opção 1", proximaFase: 4 },
-        { texto: "Opção 2", proximaFase: 5 },
-        { texto: "Opção 3", proximaFase: 6 },
+        { texto: "A) Procurar um mecanismo na parede.", proximaFase: 4 },
+        { texto: "B) Tentar entrar pelo buraco.", proximaFase: 5 },
+        { texto: "C) Explodir a porta!", proximaFase: 6 },
         { texto: "", proximaFase: 0 }
       ]
     },
     
     // 4
     {
-      texto: "Resposta 1 da escolha 2.",
+      texto: "Mimi cautelosamente investiga a parede, examinando os tijolos, até que ela consegue empurrar um deles. O templo começa a tremer e a porta abre lentamente. Um esqueleto aguarda dentro do templo, ele é alertado pela porta se abrindo e atira uma flecha na direção de Mimi. Ela é acertada e perde 1 ponto de vida, mas consegue disparar um raio no esqueleto, transformando-o numa pilha de ossos...",
       opcoes: [
-        { texto: "Continuar...", proximaFase: 7 },
+        { texto: "Continuar... (-1 ponto de vida)", proximaFase: 7 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
@@ -234,7 +234,7 @@ export const aventura2 = {
     
     // 5
     {
-      texto: "Resposta 2 da escolha 2.",
+      texto: "Mimi se agaixa perto do buraco, rastejando pela pequena abertura. Ela tem um pouco de dificuldade, mas consegue entrar no templo. Um esqueleto aguarda na sala, mas ele ainda não notou ela. A maga dispara um raio no esqueleto, que é pego desprevinido e facilmente destruído...",
       opcoes: [
         { texto: "Continuar...", proximaFase: 7 },
         { texto: "", proximaFase: 0 },
@@ -245,9 +245,9 @@ export const aventura2 = {
     
     // 6
     {
-      texto: "Resposta 3 da escolha 2.",
+      texto: "Bem pensado! Pirotecnia nunca falha! Ela triunfantemente atira uma bola de fogo no templo, o que certamente abre a porta, mas também desaba o templo. Ela não pode continuar, e retorna à sua casa, derrotada...",
       opcoes: [
-        { texto: "Continuar...", proximaFase: 7 },
+        { texto: "Fim de jogo...", proximaFase: -1 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
@@ -256,18 +256,18 @@ export const aventura2 = {
     
     // 7
     {
-      texto: "Fase 3 da aventura. Aguarde a definição da narrativa completa.",
+      texto: "Explorando o templo, Mimi se depara com uma sala nas profundezas que contém 2 baús. Um dos baús está no centro da sala, cuidadosamente colocado em um pedestal. O outro está no canto da sala, coberto por algumas. Provavelmente há uma armadilha em um deles, então ela decide...",
       opcoes: [
-        { texto: "Opção 1", proximaFase: 8 },
-        { texto: "Opção 2", proximaFase: 9 },
-        { texto: "Opção 3", proximaFase: 10 },
+        { texto: "A) Abrir o baú no pedestal.", proximaFase: 8 },
+        { texto: "B) Abrir o baú no canto da sala.", proximaFase: 9 },
+        { texto: "C) Explodir os baús...?", proximaFase: 10 },
         { texto: "", proximaFase: 0 }
       ]
     },
     
     // 8
     {
-      texto: "Resposta 1 da escolha 3.",
+      texto: "Mimi hesitantemente abre o baú no pedestal, esperando por uma armadilha óbvia. Para sua surpresa, nada acontece. O baú era verdadeiro e ela pode pegar o tesouro, saindo da sala antes que algo tente pará-la...",
       opcoes: [
         { texto: "Continuar...", proximaFase: 11 },
         { texto: "", proximaFase: 0 },
@@ -278,9 +278,9 @@ export const aventura2 = {
     
     // 9
     {
-      texto: "Resposta 2 da escolha 3.",
+      texto: "O baú no centro da sala é chamativo demais, Mimi decide abrir o baú no canto da sala. Ela se aproxima do baú e tenta abri-lo, mas era um mímico! O monstro tenta engolir ela, mas ela usa uma explosão dentro da boca do monstro e o derrota, porém ela perde 1 ponto de vida pois estava muito próxima. Ela abre o outro baú, pega o tesouro dentro dele, e sai da sala...",
       opcoes: [
-        { texto: "Continuar...", proximaFase: 11 },
+        { texto: "Continuar... (-1 ponto de vida)", proximaFase: 11 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
@@ -289,9 +289,9 @@ export const aventura2 = {
     
     // 10
     {
-      texto: "Resposta 3 da escolha 3.",
+      texto: "Por que arriscar cair numa armadilha tão óbvia? Os dois baús sofrerão sua fúria! Mimi conjura uma explosão para destruir o baú no pedestal e então conjura outra no baú solitário. Ele era um mímico e seu exterior resistente o protegeu da explosão, mas ele ficou muito irritado! Ele dá uma investida na direção de Mimi, nocauteando-a, antes de engolir a pobre aventureira...",
       opcoes: [
-        { texto: "Continuar...", proximaFase: 11 },
+        { texto: "Fim de jogo...", proximaFase: -1 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
@@ -300,20 +300,20 @@ export const aventura2 = {
     
     // 11
     {
-      texto: "Fase 4 da aventura. Aguarde a definição da narrativa completa.",
+      texto: "Mimi sai do templo com seu tesouro, um cristal de luz com grande potencial mágico que pode amplificar os poderes de qualquer aventureiro. Ela se prepara para retornar para a guilda, mas um dragão pousa na sua frente, e solta um forte rugido. Ele é o guardião do templo, e não vai deixar que ela fuja tão facilmente! Este é o obstáculo final, Mimi deve passar pelo dragão se quiser levar o tesouro. Ela decide...",
       opcoes: [
-        { texto: "Opção 1", proximaFase: 12 },
-        { texto: "Opção 2", proximaFase: 13 },
-        { texto: "Opção 3", proximaFase: 14 },
-        { texto: "Opção 4 Secreta", proximaFase: 15 }
+        { texto: "A) Enfrentar com o dragão!", proximaFase: 12 },
+        { texto: "B) Devolver o tesouro e se desculpar.", proximaFase: 13 },
+        { texto: "C) Tentar se teleportar para longe.", proximaFase: 14 },
+        { texto: "D) Usar o cristal para conjurar uma enorme explosão!", proximaFase: 15 }
       ]
     },
     
     // 12
     {
-      texto: "Resposta 1 da escolha 4.",
+      texto: "Mimi foca seu olhar no dragão, preparando-se para uma grande batalha. Ela dispara magias no dragão, tentando o seu melhor para desviar do dragão cuspindo fogo em sua direção, porém recebe alguns ferimentos... Após uma longa batalha, ela dispara um último feitiço no dragão, finalmente derrubando a fera. Uma grande batalha, e ela sai vitoriosa com seu tesouro! A aventureira volta orgulhosa à cidade, completando sua missão e recebendo uma grande recompensa!",
       opcoes: [
-        { texto: "Continuar...", proximaFase: -1 },
+        { texto: "Final Bom - Missão Completa!", proximaFase: -1 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
@@ -322,9 +322,9 @@ export const aventura2 = {
     
     // 13
     {
-      texto: "Resposta 2 da escolha 4.",
+      texto: "Aterrorizada pelo enorme dragão, Mimi decide que sua melhor escolha é abandonar o tesouro, esperando que o dragão a deixe ir embora... Ela coloca o cristal no chão cuidadosamente e se curva diante da besta, desculpando-se. O dragão pega o cristal com sua boca e voa para longe, deixando a aventureira em paz. Mimi suspira aliviada e retorna à sua casa, porém sem nenhum espólio de sua jornada...",
       opcoes: [
-        { texto: "Continuar...", proximaFase: -1 },
+        { texto: "Final Neutro 1 - Retornou sem o tesouro...", proximaFase: -1 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
@@ -333,9 +333,9 @@ export const aventura2 = {
     
     // 14
     {
-      texto: "Resposta 3 da escolha 4.",
+      texto: "Mimi observa o dragão atentamente, concentrando-se em conjurar uma magia para se teletransportar para longe e fugir do monstro. O dragão perde a paciência e tenta a atacar, mas ela desaparece momentos antes do golpe acertá-la. Ela reaparece próxima à guilda de aventureiros, olhando em sua volta, antes de correr orgulhosa para completar sua missão. Ela entrega o tesouro e leva sua recompensa, porém momentos após sair da guilda, o dragão reaparece, atacando a cidade para recuperar o cristal. Em meio às chamas e destruição, ela foje novamente, envergonhada pelo caos que sua decisão causou.",
       opcoes: [
-        { texto: "Continuar...", proximaFase: -1 },
+        { texto: "Final Ruim - Donzela da Ruína", proximaFase: -1 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
@@ -344,14 +344,25 @@ export const aventura2 = {
     
     // 15
     {
-      texto: "Resposta secreta 4 da escolha 4.",
+      texto: '"É sério? Outra explosão?" Mimi pensa para si mesma, olhando para o cristal de luz em suas mãos, antes de respirar fundo e juntar sua coragem. Ela foca seus poderes, utilizando o cristal como catalista para canalizar a magia mais poderosa possível. Ela dá um passo para trás e começa a recitar um canto... "Mais escuro que o negro, mais sombrio que a escuridão..." Ela sussurra, uma quantidade enorme de poder concentrando-se em suas mãos. O dragão começa a ficar impaciente, ele sai do chão, preparando-se para cuspir fogo na direção da aventureira, mas Mimi abre seus olhos derrepente, completando sua conjuração e olhando para o dragão desafiadoramente. "Explooooosão!" Ela grita, disparando a magia no dragão. Ele é acertado, e uma enorme bola de chamas surge do ponto de impacto, vaporizando-o instantaneamente. A força do vento causado quase a arremessa, mas ela finca seu cajado no chão para manter-se firme. A esfera de fogo no ar começa a desaparecer, por sorte, as chamas não alcançaram as árvores. Mimi retorna orgulhosa à cidade, decidindo guardar o poderoso cristal de luz para si mesma, tornando-se a aventureira mais forte da história.',
       opcoes: [
-        { texto: "Continuar...", proximaFase: -1 },
+        { texto: "Final Secreto! - Guerreira da Luz", proximaFase: -1 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
-    },   
+    },
+    
+    // 16
+    {
+      texto: 'Apesar de suas feridas, Mimi decide enfrentar o dragão, ignorando a dor e preparando-se para atacar. Ela dispara magias no dragão, fazendo seu melhor para derrotá-lo. Ela tenta desviar de seus ataques, mas os ferimentos atrasam os movimentos dela... Com um último feitiço, ela consegue derrotar o dragão, mas sofrendo grandes danos na batalha... Ela observa triunfante enquanto o dragão cai, derrotado. O efeito da adrenalina em seu corpo passa, e ela cai no chão, derrotada. O dragão foi morto, mas a custo de sua própria vida...',
+      opcoes: [
+        { texto: "Final Neutro 2 - Mártir", proximaFase: -1 },
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 }
+      ]
+    }   
 
   ]
 };

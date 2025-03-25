@@ -39,6 +39,10 @@ body {
   button:hover {
     background-color: #252525;
   }
+
+  #story {
+    line-height: 25px;
+  }
   
   #lives {
     font-size: 12px;
