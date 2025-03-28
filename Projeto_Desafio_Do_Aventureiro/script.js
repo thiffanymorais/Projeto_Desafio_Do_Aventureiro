@@ -21,6 +21,7 @@ const btn2 = document.getElementById("option2");
 const btn3 = document.getElementById("option3");
 const btn4 = document.getElementById("option4");
 const vidasElement = document.getElementById("vidas");
+const coracaoElement = document.getElementById("vidasIcone");
 const restartBtn = document.getElementById("restart");
 
 // Função para iniciar a aventura escolhida
@@ -100,6 +101,15 @@ function atualizarJogo() {
   btn3.textContent = fase.opcoes[2].texto;
   btn4.textContent = fase.opcoes[3].texto;
   vidasElement.textContent = `Vidas: ${vidas}`;
+  if (vidas == 3)
+    coracaoElement.textContent = `❤️❤️❤️`;
+  if (vidas == 2)
+  coracaoElement.textContent = `❤️❤️`;
+  if (vidas == 1)
+    coracaoElement.textContent = `❤️`;
+  if (vidas == 0)
+    coracaoElement.textContent = ``;
+  
 
   btn1.onclick = () => {
     if (aventuraSelecionada == aventura2 && faseAtual == 11 && vidas == 1) {
