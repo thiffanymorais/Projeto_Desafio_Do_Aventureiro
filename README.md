@@ -31,7 +31,7 @@ Este é um jogo de aventura interativa baseado em escolhas, onde o jogador deve 
 
 ---
 
-## Como Rodar o Jogo💻![ILoveMyPuterComputerGIF](https://github.com/user-attachments/assets/dec37ea3-54b9-429a-bbca-496460332a2e)
+## Como Rodar o Jogo💻 👩🏻‍💻👨🏻‍💻
 
 
 1. **Baixe o código**:
@@ -52,9 +52,20 @@ Este é um jogo de aventura interativa baseado em escolhas, onde o jogador deve 
 
 O jogo será aberto automaticamente no seu navegador e você poderá começar a jogar!
 
+
+## Criadores do Jogo
+
+Este jogo foi criado pela dupla:
+
+- **Bruno Eduardo**
+- **Thiffany Morais**
+
+  Você pode ver as contribuições através do historico de commits:
+
+
 ---
 
-**Boa sorte e divirta-se com a aventura!** 🚀
+**Boa sorte e divirta-se com a aventura!** 🎮
 
 
 
