@@ -70,7 +70,7 @@ export const aventura1 = {
     
     // 6
     {
-      texto: "A viatura dá partida, sem ligar as sirenes! Você acelera e atropela alguns zumbis, conseguindo sair da cidade e alcançar um refúgio no interior.",
+      texto: "A viatura dá partida, sem ligar as sirenes. Você acelera e atropela alguns zumbis, conseguindo sair da cidade e alcançar um refúgio no interior.",
       opcoes: [
         { texto: "Entrar no refúgio", proximaFase: 17 },
         { texto: "Seguir para outra cidade", proximaFase: 16 },
