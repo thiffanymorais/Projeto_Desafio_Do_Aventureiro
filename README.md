@@ -1,4 +1,4 @@
-# Projeto Desafio Do Aventureiro
+# Projeto Desafio Do Aventureiro🎮
 
 **Tecnologias**: HTML5, CSS3, JavaScript básico, Estrutura da Web, DOM
 
@@ -6,7 +6,7 @@ Este é um jogo de aventura interativa baseado em escolhas, onde o jogador deve 
 
 ---
 
-## Como Jogar
+## Como Jogar🕹️
 
 1. **Escolha uma Aventura**:
    - Na tela inicial, clique em um dos gêneros disponíveis: **Sobrevivência** ou **Fantasia** para começar o jogo.
@@ -31,7 +31,8 @@ Este é um jogo de aventura interativa baseado em escolhas, onde o jogador deve 
 
 ---
 
-## Como Rodar o Jogo
+## Como Rodar o Jogo💻![ILoveMyPuterComputerGIF](https://github.com/user-attachments/assets/dec37ea3-54b9-429a-bbca-496460332a2e)
+
 
 1. **Baixe o código**:
    - Faça o download do arquivo ZIP do repositório no GitHub.
