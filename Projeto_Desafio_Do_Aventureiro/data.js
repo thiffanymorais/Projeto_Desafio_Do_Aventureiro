@@ -139,7 +139,7 @@ export const aventura1 = {
       texto: "Você se esconde no túnel e descobre um esconderijo de sobreviventes. Eles te acolhem e oferecem comida e proteção.",
       opcoes: [
         { texto: "Ficar com eles", proximaFase: 16},
-        { texto: "Continuar sozinho", proximaFase: -1 },
+        { texto: "Continuar sozinho", proximaFase: 14 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
@@ -150,7 +150,7 @@ export const aventura1 = {
       texto: "Você corre, mas os passos ficam mais próximos. De repente, um sobrevivente aparece e atira nos zumbis. Ele te oferece ajuda.",
       opcoes: [
         { texto: "Aceitar a ajuda", proximaFase: 16 },
-        { texto: "Recusar e seguir sozinho", proximaFase: -1 },
+        { texto: "Recusar e seguir sozinho", proximaFase: 14 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
