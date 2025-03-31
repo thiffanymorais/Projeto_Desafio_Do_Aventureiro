@@ -1,7 +1,7 @@
 # Projeto Desafio Do Aventureiro
 HTML5, CSS3, JavaScript básico, Estrutura da Web, DOM
 
-Jogo 
+# JOGO:
 
 Este é um jogo de aventura interativa baseado em escolhas, onde o jogador deve tomar decisões que afetam o curso da história e podem levar ao fim do jogo ou à descoberta de 
 finais secretos. O jogo é composto por duas aventuras, com fases, opções e consequências para as escolhas feitas.
