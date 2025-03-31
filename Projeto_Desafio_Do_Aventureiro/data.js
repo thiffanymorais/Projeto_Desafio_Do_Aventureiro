@@ -4,7 +4,7 @@ export const aventura1 = {
   fases: [
     // inicio
     {
-      texto: "O mundo como você conhecia acabou. Uma infecção zumbi varreu a civilização, deixando apenas caos e destruição. Você é um dos poucos sobreviventes tentando permanecer vivo neste pesadelo. O que você faz?",
+      texto: "O mundo como você conhecia acabou. Uma infecção zumbi varreu a civilização, deixando apenas caos e destruição. Você é um dos poucos sobreviventes tentando permanecer vivo neste pesadelo.",
       opcoes: [
         { texto: "Começar...", proximaFase: 1 },
         { texto: "", proximaFase: 0 },
@@ -73,7 +73,7 @@ export const aventura1 = {
       texto: "A viatura dá partida, sem ligar as sirenes. Você acelera e atropela alguns zumbis, conseguindo sair da cidade e alcançar um refúgio no interior.",
       opcoes: [
         { texto: "Entrar no refúgio", proximaFase: 17 },
-        { texto: "Seguir para outra cidade", proximaFase: 16 },
+        { texto: "Seguir para outra cidade", proximaFase: 16 },//arrumar final
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
@@ -160,8 +160,8 @@ export const aventura1 = {
     {
       texto: "Os esgotos são escuros e perigosos. Criaturas estranhas espreitam na escuridão... Você escuta algo se aproximando.",
       opcoes: [
-        { texto: "Seguir em frente", proximaFase: 16 },
-        { texto: "Voltar para a superfície", proximaFase: 17 },
+        { texto: "Seguir em frente", proximaFase: 13},//arrumar final
+        { texto: "Voltar para a superfície", proximaFase: 17 },//arrumar final
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
