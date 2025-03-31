@@ -61,7 +61,17 @@ Este jogo foi criado pela dupla:
 - **Thiffany Morais**
 
   Você pode ver as contribuições através do historico de commits:
+  ---
+## 📂 **Estrutura do Repositório**
 
+```
+Projeto_Desafio_Do_Aventureiro/
+   ├── Data.js/                                              # Pasta com os códigos relacionados aos dados do jogo
+   ├── game.html/                                            # Página principal do jogo (estrutura HTML) 
+   ├── script.js/                                            # Código JavaScript para lógica e interatividade do frontend
+   ├── style2.css/                                           # Estilos CSS para a interface do usuário (frontend)
+  readme.md                                                  # Documentação principal do projeto
+```
 
 ---
 
