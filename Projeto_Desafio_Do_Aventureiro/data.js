@@ -2,46 +2,45 @@
 export const aventura1 = {
   titulo: "Mundo pós-apocalíptico",
   fases: [
-
-    //Inicio
+    // inicio
+    {
+      texto: "O mundo como você conhecia acabou. Uma infecção zumbi varreu a civilização, deixando apenas caos e destruição. Você é um dos poucos sobreviventes tentando permanecer vivo neste pesadelo. O que você faz?",
+      opcoes: [
+        { texto: "Começar...", proximaFase: 1 },
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 }
+      ]
+    },
+    
+    //1
     {
       texto: "Você está no centro da cidade quando as sirenes começam a soar. Pessoas correm desesperadas, e você percebe que os infectados estão atacando sem piedade. Você precisa decidir rapidamente: fugir para um prédio alto ou tentar alcançar uma viatura policial abandonada?",
       opcoes: [
-        { texto: "Subir no prédio", proximaFase: 1 },
-        { texto: "Ir até a viatura", proximaFase: 2 },
+        { texto: "Subir no prédio", proximaFase: 2 },
+        { texto: "Ir até a viatura", proximaFase: 3 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
     },
     
-    // 1
+    // 2
     {
       texto: "Você sobe correndo as escadas do prédio, mas os zumbis já estão atrás de você. No último andar, há uma porta trancada e uma janela que dá para um telhado vizinho. O que fazer?",
       opcoes: [
-        { texto: "Forçar a porta", proximaFase: 3 },
-        { texto: "Pular pela janela", proximaFase: 4 },
+        { texto: "Forçar a porta", proximaFase: 4 },
+        { texto: "Pular pela janela", proximaFase: 5 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
     },
 
-    // 2
+    // 3
     {
       texto: "Você chega à viatura e encontra uma espingarda e um rádio. Mas antes que consiga algo mais, um grupo de zumbis avança contra você. A única saída é entrar no carro e tentar ligá-lo ou fugir para um beco próximo.",
       opcoes: [
-        { texto: "Ligar a viatura", proximaFase: 5 },
-        { texto: "Correr para o beco", proximaFase: 6 },
-        { texto: "", proximaFase: 0 },
-        { texto: "", proximaFase: 0 }
-      ]
-    },
-    
-    // 3
-    {
-      texto: "A porta cede e você encontra um pequeno grupo de sobreviventes armados. Eles pedem sua ajuda para defender o prédio enquanto procuram uma rota de fuga.",
-      opcoes: [
-        { texto: "Ajudar na defesa", proximaFase: 7 },
-        { texto: "Escapar sozinho", proximaFase: 8 },
+        { texto: "Dirigir a viatura", proximaFase: 6 },
+        { texto: "Correr para o beco", proximaFase: 7 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
@@ -49,10 +48,10 @@ export const aventura1 = {
     
     // 4
     {
-      texto: "Você pula e aterrissa no telhado vizinho, mas torce o tornozelo. Zumbis começam a escalar atrás de você. Você pode tentar continuar mancando ou procurar algo para se defender.",
+      texto: "A porta cede e você encontra um pequeno grupo de sobreviventes armados. Eles pedem sua ajuda para defender o prédio enquanto procuram uma rota de fuga.",
       opcoes: [
-        { texto: "Continuar mancando", proximaFase: 9 },
-        { texto: "Procurar arma", proximaFase: 10 },
+        { texto: "Ajudar na defesa", proximaFase: 8 },
+        { texto: "Escapar sozinho", proximaFase: 9 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
@@ -60,10 +59,10 @@ export const aventura1 = {
     
     // 5
     {
-      texto: "A viatura dá partida! Você acelera e atropela alguns zumbis, conseguindo sair da cidade e alcançar um refúgio no interior.",
+      texto: "Você pula e aterrissa no telhado vizinho, mas torce o tornozelo. Zumbis começam a escalar atrás de você. Você pode tentar continuar mancando ou procurar algo para se defender.",
       opcoes: [
-        { texto: "Entrar no refúgio", proximaFase: -1 },
-        { texto: "Seguir para outra cidade", proximaFase: -1 },
+        { texto: "Continuar mancando", proximaFase: 10 },
+        { texto: "Procurar arma", proximaFase: 11 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
@@ -71,10 +70,10 @@ export const aventura1 = {
     
     // 6
     {
-      texto: "O beco leva a um túnel subterrâneo, mas você ouve passos atrás de você. Algo ou alguém está te seguindo...",
+      texto: "A viatura dá partida, sem ligar as sirenes! Você acelera e atropela alguns zumbis, conseguindo sair da cidade e alcançar um refúgio no interior.",
       opcoes: [
-        { texto: "Se esconder", proximaFase: 11 },
-        { texto: "Correr mais rápido", proximaFase: 12 },
+        { texto: "Entrar no refúgio", proximaFase: 17 },
+        { texto: "Seguir para outra cidade", proximaFase: 16 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
@@ -82,10 +81,10 @@ export const aventura1 = {
     
     // 7
     {
-      texto: "Vocês defendem o prédio, mas os suprimentos acabam. O grupo decide se separar. Você segue sozinho em busca de outro abrigo.",
+      texto: "O beco leva a um túnel subterrâneo, mas você ouve passos atrás de você. Algo ou alguém está te seguindo...",
       opcoes: [
-        { texto: "Explorar os esgotos", proximaFase: 13 },
-        { texto: "Buscar outro prédio", proximaFase: 14 },
+        { texto: "Se esconder", proximaFase: 12 },
+        { texto: "Correr mais rápido", proximaFase: 13 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
@@ -93,10 +92,10 @@ export const aventura1 = {
     
     // 8
     {
-      texto: "Você escapa do prédio, mas fica vulnerável nas ruas infestadas. A única saída parece ser um helicóptero que pousou em um estádio próximo.",
+      texto: "Vocês defendem o prédio, mas os suprimentos acabam. O grupo decide se separar. Você segue sozinho em busca de outro abrigo.",
       opcoes: [
-        { texto: "Ir até o helicóptero", proximaFase: -1 },
-        { texto: "Procurar abrigo nas montanhas", proximaFase: -1 },
+        { texto: "Explorar os esgotos", proximaFase: 14 },
+        { texto: "Buscar outro prédio", proximaFase: 15 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
@@ -104,10 +103,10 @@ export const aventura1 = {
     
     // 9
     {
-      texto: "Sem arma, você continua mancando e os zumbis te alcançam... fim da linha.",
+      texto: "Você escapa do prédio, mas fica vulnerável nas ruas infestadas. A única saída parece ser um helicóptero que pousou em um estádio próximo.",
       opcoes: [
-        { texto: "Recomeçar", proximaFase: 0 },
-        { texto: "", proximaFase: 0},
+        { texto: "Ir até o helicóptero", proximaFase: 18 },
+        { texto: "Procurar abrigo nas montanhas", proximaFase: 19 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
@@ -115,10 +114,10 @@ export const aventura1 = {
     
     // 10
     {
-      texto: "Você encontra um cano de ferro e luta contra os zumbis! Mas sua força está se esgotando. É preciso encontrar uma saída.",
+      texto: "Sem arma, você continua mancando e os zumbis te alcançam... fim da linha.",
       opcoes: [
-        { texto: "Subir em um caminhão abandonado", proximaFase: -1 },
-        { texto: "Correr para um shopping", proximaFase: -1 },
+        { texto: "Recomeçar", proximaFase: -1 },
+        { texto: "", proximaFase: 0},
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
@@ -126,10 +125,10 @@ export const aventura1 = {
     
     // 11
     {
-      texto: "Você se esconde no túnel e descobre um esconderijo de sobreviventes. Eles te acolhem e oferecem comida e proteção.",
+      texto: "Você encontra um cano de ferro e luta contra os zumbis! Mas sua força está se esgotando. É preciso encontrar uma saída.",
       opcoes: [
-        { texto: "Ficar com eles", proximaFase: -1 },
-        { texto: "Continuar sozinho", proximaFase: -1 },
+        { texto: "Subir em um caminhão abandonado", proximaFase: 20 },
+        { texto: "Correr para um shopping", proximaFase: 21 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
@@ -137,10 +136,10 @@ export const aventura1 = {
     
     // 12
     {
-      texto: "Você corre, mas os passos ficam mais próximos. De repente, um sobrevivente aparece e atira nos zumbis. Ele te oferece ajuda.",
+      texto: "Você se esconde no túnel e descobre um esconderijo de sobreviventes. Eles te acolhem e oferecem comida e proteção.",
       opcoes: [
-        { texto: "Aceitar a ajuda", proximaFase: -1 },
-        { texto: "Recusar e seguir sozinho", proximaFase: -1 },
+        { texto: "Ficar com eles", proximaFase: 16},
+        { texto: "Continuar sozinho", proximaFase: -1 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
@@ -148,10 +147,10 @@ export const aventura1 = {
     
     // 13
     {
-      texto: "Os esgotos são escuros e perigosos. Criaturas estranhas espreitam na escuridão... Você escuta algo se aproximando.",
+      texto: "Você corre, mas os passos ficam mais próximos. De repente, um sobrevivente aparece e atira nos zumbis. Ele te oferece ajuda.",
       opcoes: [
-        { texto: "Seguir em frente", proximaFase: -1 },
-        { texto: "Voltar para a superfície", proximaFase: -1 },
+        { texto: "Aceitar a ajuda", proximaFase: 16 },
+        { texto: "Recusar e seguir sozinho", proximaFase: -1 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
@@ -159,14 +158,102 @@ export const aventura1 = {
     
     // 14
     {
-      texto: "Você entra em outro prédio e encontra um rádio funcional. Você escuta uma mensagem de resgate a caminho!",
+      texto: "Os esgotos são escuros e perigosos. Criaturas estranhas espreitam na escuridão... Você escuta algo se aproximando.",
       opcoes: [
-        { texto: "Esperar pelo resgate", proximaFase: -1 },
-        { texto: "Continuar explorando", proximaFase: -1 },
+        { texto: "Seguir em frente", proximaFase: 16 },
+        { texto: "Voltar para a superfície", proximaFase: 17 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
-    }
+    },
+    
+    // 15
+    {
+      texto: "Você entra em outro prédio e encontra um rádio funcional. Você escuta uma mensagem de resgate a caminho!",
+      opcoes: [
+        { texto: "Esperar pelo resgate", proximaFase: 22 },
+        { texto: "Continuar explorando", proximaFase: 2 },
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 }
+      ]
+    },
+
+    // 16
+    {
+        texto: "Você encontra um grupo de sobreviventes organizados. Após algumas semanas de quarentena é aceito na comunidade. Anos depois, ajudaria a recontruir a civilização",
+        opcoes: [
+          { texto: "Recomeçar", proximaFase: -1 },
+          { texto: "", proximaFase: 0},
+          { texto: "", proximaFase: 0 },
+          { texto: "", proximaFase: 0 }
+        ]
+    },
+
+    // 17
+    {
+      texto: "Na estrada, você encontra uma caravana militar. junta-se a eles e se torna um explorador,mapeando áreas seguras e resgatando outros sobreviventes. Encontra um novo propósito na vida.",
+      opcoes: [
+        { texto: "Recomeçar", proximaFase: -1 },
+        { texto: "", proximaFase: 0},
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 }
+      ]
+    },
+
+    //18
+    {
+      texto: "Enquanto o helicóptero decola, você vê a cidade em ruínas abaixo. O soldado entrega a você um cobertor e um comunicador: 'Fomos os últimos a sair. Você é um sobrevivente sortudo - estamos te levando para a zona segura'. O sol nasce no horizonte enquanto vocês voam em direção à segurança.",
+      opcoes: [
+        { texto: "Recomeçar", proximaFase: -1 },
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 }
+      ]
+    },
+
+    //19
+    {
+      texto: "Você decide evitar o helicóptero e se dirige às montanhas, onde a horda parece menos densa. Após dias de caminhada, encontra uma cabana abandonada, protegida por um vale estreito. Dentro, há suprimentos, uma fonte de água limpa e até um rádio amador. A paz das montanhas torna-se um novo começo.",
+      opcoes: [
+        { texto: "Estabelecer um abrigo permanente", proximaFase: -1 },
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 }
+      ]
+    },
+     // 20
+     {
+      texto: "Você corre até o caminhão e tenta dirigir para longe, mas ele não está funcionando. Os zumbis te alcançam mas você não está seguro e se cansa de lutar.",
+      opcoes: [
+        { texto: "Recomeçar", proximaFase: -1 },
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 }
+      ]
+    },
+    //21
+    {
+      texto: "O shopping está repleto de zumbis. Você tenta retornar por onde entrou, mas eles fecharam seu caminho, te deixando encurralado.",
+      opcoes: [
+        { texto: "Recomeçar", proximaFase: -1 },
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 }
+      ]
+    },
+    
+    //22
+    {
+      texto: "Você espera pelo Resgate mas os zumbis acabam quebrando a porta e te deixam encurralado.",
+      opcoes: [
+        { texto: "Recomeçar", proximaFase: -1 },
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 }
+      ]
+    },
+    
+    
   ]
 };
 

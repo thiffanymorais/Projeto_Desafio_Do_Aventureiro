@@ -4,8 +4,11 @@ let aventuraSelecionada = null;
 let faseAtual = 0;
 let vidas = 3;
 
+var fasesAvent1 = new Array(10,16,17,18,19,20,21,22);
+var morteAvent1 = new Array(9,10,12,16)
 var fasesAvent2 = new Array(1,2,4,5,6,8,9,10,12,13,14,15);
 var danoAvent2 = new Array(4,9,12,16);
+var morteAvent2 = new Array(2,6,10)
 var secretCon1 = false;
 var secretCon2 = false;
 var secretCon3 = false;
@@ -40,15 +43,23 @@ function iniciarAventura(aventura) {
   atualizarJogo();
 }
 
-// Função para processar a escolha do jogador
 function processarEscolha(proximaFase) {
-  // Exemplo: se a escolha levar a perder uma vida (a lógica pode ser personalizada)
-  // Aqui você pode incluir condições específicas para reduzir vidas
-  // Exemplo simples: se proximaFase for 2 (pode ser alterado conforme a história)
-  if (aventuraSelecionada == aventura1 && proximaFase === 2) {
-    vidas--;
-    if (vidas <= 0 && aventuraSelecionada == aventura1) {
+  const fasesQuePerdemVida = [ 3, 5, 7, 9, 11];
+
+  if (aventuraSelecionada === aventura1) {
+
+    if (fasesQuePerdemVida.includes(proximaFase)) {
+      vidas--;
+    } else if (aventuraSelecionada == aventura1 && morteAvent1.indexOf(proximaFase) != -1) {
+      vidas = 0;
+    
+    }
+
+    if (vidas <= 0) {
+      // Se o jogador ficar sem vidas, exibe a mensagem de fim de jogo
       storyElement.textContent = "Você perdeu todas as vidas. Fim de jogo!";
+      vidasElement.textContent = `Vidas: ${vidas}`;
+      coracaoElement.textContent = ``;  // Remove o ícone do coração
       btn1.classList.add("hidden");
       btn2.classList.add("hidden");
       restartBtn.classList.remove("hidden");
@@ -56,10 +67,20 @@ function processarEscolha(proximaFase) {
     }
   }
 
+  if (aventuraSelecionada == aventura1 && fasesAvent1.indexOf(proximaFase) != -1) {
+    btn2.classList.add("hidden");
+    btn3.classList.add("hidden");
+    btn4.classList.add("hidden");
+  } else if (aventuraSelecionada == aventura1) {
+    btn2.classList.remove("hidden");
+  }
+
   // Aventura 2
 
   if (aventuraSelecionada == aventura2 && danoAvent2.indexOf(proximaFase) != -1) {
     vidas--;
+  } else if (aventuraSelecionada == aventura2 && morteAvent2.indexOf(proximaFase) != -1) {
+    vidas = 0;
   }
 
   if (aventuraSelecionada == aventura2 && fasesAvent2.indexOf(proximaFase) != -1) {
@@ -110,6 +131,9 @@ function atualizarJogo() {
   if (vidas == 0)
     coracaoElement.textContent = ``;
   
+  if (aventuraSelecionada == aventura1 && faseAtual == 0) {
+    btn2.classList.add("hidden");
+  }
 
   btn1.onclick = () => {
     if (aventuraSelecionada == aventura2 && faseAtual == 11 && vidas == 1) {
