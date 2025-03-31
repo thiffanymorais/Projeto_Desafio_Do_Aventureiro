@@ -18,7 +18,7 @@ Este é um jogo de aventura interativa baseado em escolhas, onde o jogador deve 
    - Tome decisões cuidadosas para evitar perder todas as vidas. Tente descobrir os finais secretos, especialmente na aventura **Fantasia**!
 
 4. **Recomeçar**:
-   - Se quiser reiniciar a aventura, basta atualizar a página.
+   - Se quiser reiniciar e escolher uma nova aventura, basta atualizar a página.
 
 ---
 
