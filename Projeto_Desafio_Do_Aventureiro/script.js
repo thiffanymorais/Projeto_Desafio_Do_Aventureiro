@@ -4,8 +4,8 @@ let aventuraSelecionada = null;
 let faseAtual = 0;
 let vidas = 3;
 
-var fasesAvent1 = new Array(10,16,17,18,19,20,21,22);
-var morteAvent1 = new Array(9,10,12,16,20,21,22)
+var fasesAvent1 = new Array(10,16,17,18,19,20,21,22,23,24,25);
+var morteAvent1 = new Array(9,10,20,21,22,23,24,25)
 var fasesAvent2 = new Array(1,2,4,5,6,8,9,10,12,13,14,15);
 var danoAvent2 = new Array(4,9,12,16);
 var morteAvent2 = new Array(2,6,10)
