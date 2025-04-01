@@ -73,7 +73,7 @@ export const aventura1 = {
       texto: "A viatura dá partida, sem ligar as sirenes. Você acelera e atropela alguns zumbis, conseguindo sair da cidade e alcançar um refúgio no interior.",
       opcoes: [
         { texto: "Entrar no refúgio", proximaFase: 17 },
-        { texto: "Seguir para outra cidade", proximaFase: 16 },//arrumar final
+        { texto: "Seguir para outra cidade", proximaFase: 23 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
@@ -150,7 +150,7 @@ export const aventura1 = {
       texto: "Você corre, mas os passos ficam mais próximos. De repente, um sobrevivente aparece e atira nos zumbis. Ele te oferece ajuda.",
       opcoes: [
         { texto: "Aceitar a ajuda", proximaFase: 16 },
-        { texto: "Recusar e seguir sozinho", proximaFase: 14 },
+        { texto: "Recusar e seguir sozinho", proximaFase: 24 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
@@ -160,8 +160,8 @@ export const aventura1 = {
     {
       texto: "Os esgotos são escuros e perigosos. Criaturas estranhas espreitam na escuridão... Você escuta algo se aproximando.",
       opcoes: [
-        { texto: "Seguir em frente", proximaFase: 13},//arrumar final
-        { texto: "Voltar para a superfície", proximaFase: 17 },//arrumar final
+        { texto: "Seguir em frente", proximaFase: 24},
+        { texto: "Voltar para a superfície", proximaFase: 25 },
         { texto: "", proximaFase: 0 },
         { texto: "", proximaFase: 0 }
       ]
@@ -252,11 +252,39 @@ export const aventura1 = {
         { texto: "", proximaFase: 0 }
       ]
     },
-    
-    
+    //23
+     {
+      texto: "Você segue para outra cidade, mas, à medida que se aproxima, o carro quebra e você fica preso no meio da estrada. O som de passos zumbis se aproxima, e, sem opções, você é cercado. A luta pela sobrevivência termina aqui.",
+      opcoes: [
+        { texto: "Recomeçar", proximaFase: -1 },
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 }
+      ]
+    },
+     // 24
+    {
+      texto: "Você avança, mas logo é surpreendido pelas criaturas que se ocultavam na escuridão. Elas te atacam com ferocidade, e você é consumido pelas sombras.",
+      opcoes: [
+        { texto: "Recomeçar", proximaFase: -1},
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 }
+      ]
+    },
+     // 25
+     {
+      texto: "Ao tentar voltar para a superfície, você é emboscado. As criaturas te alcançam antes de você conseguir sair dos esgotos. O fim é inevitável.",
+      opcoes: [
+        { texto: "Recomeçar", proximaFase: -1},
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 },
+        { texto: "", proximaFase: 0 }
+      ]
+    }   
+
   ]
 };
-
 // -----------------------------------------------------------------------------------------------------
 
 // História 2: Mundo de Fantasia - Final Fiction XIV
