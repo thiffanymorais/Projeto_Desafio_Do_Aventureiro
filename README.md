@@ -31,8 +31,15 @@ Este é um jogo de aventura interativa baseado em escolhas, onde o jogador deve 
 
 ---
 
-## Como Rodar o Jogo💻 👩🏻‍💻👨🏻‍💻
+## Como Rodar o Jogo💻 📲
 
+## Link para o Jogo Online
+
+Você pode acessar o jogo diretamente no seguinte link:
+
+[Projeto Aventureiro](https://projetoaventureiro.vercel.app)
+
+ou
 
 1. **Baixe o código**:
    - Faça o download do arquivo ZIP do repositório no GitHub.
@@ -53,7 +60,7 @@ Este é um jogo de aventura interativa baseado em escolhas, onde o jogador deve 
 O jogo será aberto automaticamente no seu navegador e você poderá começar a jogar!
 
 
-## Criadores do Jogo
+## Criadores do Jogo👩🏻‍💻👨🏻‍💻
 
 Este jogo foi criado pela dupla:
 
@@ -72,6 +79,11 @@ Projeto_Desafio_Do_Aventureiro/
    ├── style2.css/                                           # Estilos CSS para a interface do usuário (frontend)
   readme.md                                                  # Documentação principal do projeto
 ```
+## Link para o Repositório
+
+Você pode acessar o repositório completo do projeto através do seguinte link:
+
+[Projeto Desafio Do Aventureiro](https://github.com/thiffanymorais/Projeto_Desafio_Do_Aventureiro.git)
 
 ---
 
