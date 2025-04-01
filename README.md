@@ -37,7 +37,7 @@ Este é um jogo de aventura interativa baseado em escolhas, onde o jogador deve 
 
 Você pode acessar o jogo diretamente no seguinte link:
 
-[Projeto Aventureiro](projeto-desafio-do-aventureiro.vercel.app)
+[Projeto Aventureiro](https://projeto-desafio-do-aventureiro.vercel.app/)
 
 ou
 
