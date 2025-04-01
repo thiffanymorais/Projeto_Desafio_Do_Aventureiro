@@ -44,7 +44,7 @@ function iniciarAventura(aventura) {
 }
 
 function processarEscolha(proximaFase) {
-  const fasesQuePerdemVida = [ 3, 5, 7, 9, 11];
+  const fasesQuePerdemVida = [ 3, 5, 7, 9];
 
   if (aventuraSelecionada === aventura1) {
 
